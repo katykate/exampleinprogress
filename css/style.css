@@ -1,0 +1,59 @@
+body {
+	background-color: #000000;
+}
+
+.myaccordion-panels {
+	background-color: #ffffff;
+	width: 75%;
+	max-width: 900px;
+	padding: 20px;
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accordion {
+	height: 80px;	
+	background-color: #6633cc;
+	border-bottom: 5px solid #333399;
+	padding: 30px;
+	padding-bottom: 15px;
+}
+
+#second {
+	margin-bottom: -15px;
+	margin-top: -20px;
+}
+
+.accordion.is-clicked {
+	background-color: #993399;
+	border-bottom: 5px solid #663366;
+	color: #ffffff;
+}
+
+.accordion::after,
+.accordion.is-clicked::after {
+	content: "\f106";
+	font-family: "fontawesome";
+	font-size: 30px;
+	float: right;
+	color: #ffffff;
+	margin-right: 30px;
+}
+
+.accordion.is-clicked::after {
+	content: "\f107";
+}
+
+.panel {
+	background-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 0.5px #cccccc;
+  -moz-box-shadow: inset 0px 0px 0px 0.5px #cccccc;
+  box-shadow:inset 0px 0px 0px 0.5px #cccccc; 
+	padding: 0 30px;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 1s ease;
+	margin-bottom: 3.5px;
+}
